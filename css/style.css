@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: black;
+}
+
+body.morning {
+    background: linear-gradient(rgb(139, 226, 238), rgb(150, 164, 241));
+}
+
+body.afternoon {
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+}
+
+body.evening {
+    background: linear-gradient(rgb(10, 111, 170), rgb(1, 6, 34));
+    color: white;
+}
+
+#time {
+    font-size: 8rem;
+}
+
+h1 {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+    opacity: 0.6;
+}
+
+@media(max-width: 700px) {
+    #time {
+        font-size: 6rem;
+        ;
+    }
+}
